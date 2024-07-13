@@ -1,5 +1,14 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for(let number of array){
+    const complimentNumber = target- number;
+    if(array.includes(complimentNumber)){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
 }
 
 /* 
@@ -8,6 +17,11 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  fn hastarget that take urguments of array and target
+  for each number in array
+  check for complementnumber that adds up to target
+  if complementnumber is in array return true
+
 */
 
 /*
